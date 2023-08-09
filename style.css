@@ -35,6 +35,33 @@
   --trans-color: background-color 0.5s;
  }
 
+ .rank {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ }
+
+ .rank p{
+  position: absolute;
+  top: 70%;
+  font-size: 21px;
+  font-weight: 600;
+  font-family: monospace;
+  /* background-color: #154861a8; */
+  padding: 14px;
+  border-radius: 8px;
+  color: rgb(0, 0, 0);
+ }
+
+
+
  
  #loader{
    position: fixed;
@@ -43,8 +70,8 @@
   align-items: center;
   align-self: center;
   z-index: 20;
-  background-color: #7f7f7fbf;
-  top: 0;
+  background-color: #dcdcdc;
+   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
