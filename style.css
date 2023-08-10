@@ -251,6 +251,7 @@ h4 {
   color: rosybrown;
 }
 
+
 .icon-small .icon-large {
   display: flex;
   align-items: center;
@@ -1047,7 +1048,7 @@ PRODUCT b. BIG product
   display: flex;
   justify-content: space-between;
 }
-
+/* 
 .products .stock .bar {
   height: 3px;
   margin-top: 1em;
@@ -1059,6 +1060,36 @@ PRODUCT b. BIG product
   height: 3px;
   width: 21%;
   background-color: darkblue;
+} */
+
+.bar .available::before{
+
+  position: absolute;
+  content: '';
+  background-color: rgba(86,86,153,.5);
+  width: 77%;
+  top: 93%;
+  height: 5px;
+  border-radius: 1000px;
+  left: 32px;
+}
+
+.bar .available::after{
+  position: absolute;
+  content: '';
+  background-color: rgb(32, 32, 150);
+  width: 0;
+  height: 5px;
+  border-radius: 1000px;
+  left: 32px;
+  top: 93%;
+  animation: appointment 3s 1s linear forwards infinite;
+}
+
+@keyframes appointment{
+  to{
+    width: 50%;
+  }
 }
 
 .products.main .footer{
